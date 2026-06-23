@@ -12,7 +12,7 @@ verifies it matches a reference to ~1e-6.
 | # | Primitive | Status | Check |
 |---|-----------|--------|-------|
 | 1 | 3-layer MLP — forward + **manual backward** (no autograd) | ✅ | gradient-check vs autograd, 0 error |
-| 2 | Softmax + cross-entropy (log-sum-exp), manual backward | — | |
+| 2 | Softmax + cross-entropy (log-sum-exp), manual backward | ✅ | stability + loss + backward all match, ~1e-9 |
 | 3 | AdamW optimizer from scratch | — | |
 | 4 | LayerNorm forward + manual backward | — | |
 | 5 | Multi-head self-attention | — | |
